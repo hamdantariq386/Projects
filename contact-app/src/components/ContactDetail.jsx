@@ -2,7 +2,7 @@ import React from "react";
 import {Link} from "react-router-dom"
 import { useParams } from "react-router-dom";
 import user from "../images/images.png"
-
+import { FaAngleLeft } from "react-icons/fa";
     
 const ContactDetail = ({ contacts }) => {
     const { id } = useParams();
@@ -32,7 +32,7 @@ const ContactDetail = ({ contacts }) => {
                 </div>
             </div>
             <Link to={"/"}> 
-                 <button className="ui button blue center back-btn">Back to Contact List</button>
+                 <button className="ui button blue center back-btn"><FaAngleLeft className="icon"/>Back to Contact List</button>
             </Link>
         </div>
         
